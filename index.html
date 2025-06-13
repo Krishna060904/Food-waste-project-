@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Rs of Food Waste - Reduce, Rescue, Redistribute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>3Rs of Food Waste - Reduce, Rescue, Redistribute</h1>
+    </header>
+    <nav>
+        <a href="#problem" aria-label="Navigate to Problem section">The Problem</a>
+        <a href="#reduce" aria-label="Navigate to Reduce section">Reduce</a>
+        <a href="#rescue" aria-label="Navigate to Rescue section">Rescue</a>
+        <a href="#redistribute" aria-label="Navigate to Redistribute section">Redistribute</a>
+        <a href="#impact" aria-label="Navigate to Impact Stories section">Impact Stories</a>
+        <a href="#share" aria-label="Navigate to Share Your Story section">Share Your Story</a>
+        <a href="#tips" aria-label="Navigate to Tips and Resources section">Tips and Resources</a>
+    </nav>
+    <section id="problem">
+        <h2 onclick="toggleContent('problem-content')">The Problem</h2>
+        <div id="problem-content">
+            <p>Food waste contributes to greenhouse gas emissions.</p>
+            <p>Wasted food means wasted resources used in production.</p>
+            <p>It strains food systems and exacerbates hunger and poverty.</p>
+            <p>Reducing food waste can lead to significant environmental benefits.</p>
+        </div>
+    </section>
+    <section id="reduce">
+        <h2 onclick="toggleContent('reduce-content')">Reduce</h2>
+        <div id="reduce-content">
+            <p>Buying only what you need reduces the likelihood of food going bad.</p>
+            <p>Meal planning helps in utilizing ingredients efficiently.</p>
+            <p>Portion control prevents excess food from being cooked.</p>
+            <p>Awareness about expiry dates aids in consuming food before it spoils.</p>
+        </div>
+    </section>
+    <section id="rescue">
+        <h2 onclick="toggleContent('rescue-content')">Rescue</h2>
+        <div id="rescue-content">
+            <p>Food rescue involves collecting excess food from various sources.</p>
+            <p>Redirecting surplus food to shelters and food banks helps feed the hungry.</p>
+            <p>Collaborating with restaurants and supermarkets reduces food waste at the source.</p>
+            <p>Food rescue initiatives require coordination and logistics.</p>
+        </div>
+    </section>
+    <section id="redistribute">
+        <h2 onclick="toggleContent('redistribute-content')">Redistribute</h2>
+        <div id="redistribute-content">
+            <p>Community organizations play a vital role in redistributing surplus food.</p>
+            <p>Food banks distribute food to individuals and families in need.</p>
+            <p>Collaborating with local shelters ensures food reaches those who need it most.</p>
+            <p>Redistributing food reduces waste and helps alleviate food insecurity.</p>
+        </div>
+    </section>
+    <section id="impact">
+        <h2>Impact Stories</h2>
+        <input type="text" id="search" class="form-input" placeholder="Search stories...">
+        <div id="impact-stories"></div>
+    </section>
+    <section id="share">
+        <h2>Share Your Story</h2>
+        <form id="story-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required><br>
+            <label for="story">Story</label>
+            <textarea id="story" name="story" class="form-input" rows="4" required></textarea><br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="submission-feedback"></p>
+    </section>
+    <section id="tips">
+        <h2>Tips and Resources</h2>
+        <p>Include tips and resources for reducing food waste here...</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 3Rs of Food Waste. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
